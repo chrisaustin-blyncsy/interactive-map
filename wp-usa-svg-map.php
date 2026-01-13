@@ -20,7 +20,7 @@ function wpusm_render_shortcode( $atts ) {
     wp_enqueue_style( 'wpusm-style' );
     wp_enqueue_script( 'wpusm-script' );
 
-    $svg_path = plugin_dir_path( __FILE__ ) . 'assets/svg/usa.svg';
+    $svg_path = plugin_dir_path( __FILE__ ) . 'assets/svg/USA-Map-with-Guam.svg';
     if ( ! file_exists( $svg_path ) ) {
         return '<div class="usa-svg-map">SVG file not found.</div>';
     }
