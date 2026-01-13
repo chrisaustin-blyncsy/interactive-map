@@ -1,0 +1,26 @@
+/* Responsive container for the inline SVG map */
+.usa-svg-map{
+  width:100%;
+  max-width:1200px;
+  margin:0 auto;
+  position:relative;
+}
+.usa-svg-map svg{
+  width:100%;
+  height:auto;
+  display:block;
+}
+
+/* Prevent theme/Elementor from breaking positioning */
+.usa-svg-map svg *{
+  vector-effect: non-scaling-stroke;
+}
+
+/* Example base state styling */
+.usa-map-state{ fill:#cccccc; stroke:#ffffff; stroke-width:0.5; transition:fill .15s ease; }
+.usa-map-state:hover{ fill:#999999; cursor:pointer; }
+
+/* Allow the SVG to scale nicely on high-DPI */
+@media (max-width:600px){
+  .usa-svg-map{ padding-left:6px; padding-right:6px; }
+}
